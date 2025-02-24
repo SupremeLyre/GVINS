@@ -62,9 +62,9 @@ target_link_libraries(ic_gvins_core
         absl::str_format
         absl::time)
 # rtklib
-include_directories(/media/zhuhang/D/mGNSS/include/)
-target_link_libraries(ic_gvins_core
-        /media/zhuhang/D/mGNSS/lib/libRTKLIB.so
+include_directories(/home/supremelyre/data/projects/GINS/include)
+target_link_libraries(ic_gvins_core 
+/home/supremelyre/data/projects/GINS/lib/libRTKLIB.so
         ) 
 
 # ROS interface
@@ -76,7 +76,7 @@ find_package(catkin REQUIRED COMPONENTS
         gnss_comm)
 include_directories(
         ${catkin_INCLUDE_DIRS}
-        /media/zhuhang/D/mGNSS/include/
+        /home/supremelyre/data/projects/GINS/include
         )
 
 # GVINS ROS with standard messages
@@ -89,5 +89,5 @@ add_executable(${PROJECT_NAME}_ros
 target_link_libraries(${PROJECT_NAME}_ros
         ${catkin_LIBRARIES}
         ic_gvins_core
-        /media/zhuhang/D/mGNSS/lib/libRTKLIB.so
+        /home/supremelyre/data/projects/GINS/lib/libRTKLIB.so
         )

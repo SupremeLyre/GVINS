@@ -16,11 +16,11 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
-  /media/zhuhang/D/mGNSS/include/
+  /home/supremelyre/data/projects/GINS/include
 )
 
 add_executable(data2bag src/data2bag.cc)
-target_link_libraries(data2bag ${catkin_LIBRARIES} ${OpenCV_LIBS} /media/zhuhang/D/mGNSS/lib/libRTKLIB.so)
+target_link_libraries(data2bag ${catkin_LIBRARIES} ${OpenCV_LIBS} /home/supremelyre/data/projects/GINS/lib/libRTKLIB.so)
 
 add_executable(receive src/receive.cc)
-target_link_libraries(receive ${catkin_LIBRARIES} ${OpenCV_LIBS} /media/zhuhang/D/mGNSS/lib/libRTKLIB.so)
+target_link_libraries(receive ${catkin_LIBRARIES} ${OpenCV_LIBS} /home/supremelyre/data/projects/GINS/lib/libRTKLIB.so)

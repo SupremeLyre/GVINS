@@ -52,8 +52,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC
   ${EIGEN3_INCLUDE_DIR}
   ${catkin_INCLUDE_DIRS}
   ${PROJECT_SOURCE_DIR}/include/
-  /media/zhuhang/D/mGNSS/include/
+  /home/supremelyre/data/projects/GINS/include
 )
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GLOG_LIBRARIES} /media/zhuhang/D/mGNSS/lib/libRTKLIB.so)
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GLOG_LIBRARIES} /home/supremelyre/data/projects/GINS/lib/libRTKLIB.so)
 add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_generate_messages_cpp)
 
